@@ -83,6 +83,9 @@ if IN_COLAB:
     os.chdir("/content/mdlt-jev-slm")
     subprocess.run([sys.executable, "-m", "pip", "install", "-q", "trl==1.17.1", "peft==0.21.2",
                     "transformers==5.22.2", "datasets==5.2.0", "accelerate==1.15.0"], check=True)
+    # Colab ships an old torchao (0.10), and this PEFT version refuses to create LoRA layers while an older torchao
+    # than 0.16 is installed. The notebook does not use torchao, so it is removed.
+    subprocess.run([sys.executable, "-m", "pip", "uninstall", "-q", "-y", "torchao"], check=True)
 else:   # local run: the notebook lives in a2_slm/, the code is imported from the repository root
     while not os.path.isdir("common"):
         os.chdir("..")

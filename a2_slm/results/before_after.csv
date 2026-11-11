@@ -1,0 +1,3 @@
+,all 3 right,category,urgency,escalate,category macro-F1,escalate recall,invalid output,pure JSON output,"latency, s / message"
+before: base Qwen3-0.6B,12.5 %,56.2 %,36.2 %,51.2 %,52.2 %,93.3 %,0.0 %,100.0 %,1.02
+after: + LoRA fine-tuning,77.5 %,93.8 %,86.2 %,93.8 %,93.8 %,80.0 %,0.0 %,100.0 %,1.02

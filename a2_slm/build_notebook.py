@@ -378,9 +378,11 @@ md(r"""
 ## 7 · Export: merged model → GGUF → LM Studio
 
 1. **Merge.** W′ = W + (α / r)·B·A for every adapted matrix, computed in fp32 and saved in bf16 as an ordinary
-   Hugging Face model. The chat template is changed so that *no thinking* is the default: Qwen3 adds the empty
-   `<think></think>` block only when the caller passes `enable_thinking=False`, and LM Studio does not pass it.
-   With the changed template every runtime builds exactly the prompt the model was trained on.
+   Hugging Face model. The chat template is changed so that it *always* adds the empty `<think></think>` block
+   (no thinking). The original template adds it only when the caller passes `enable_thinking=False`, and LM Studio
+   passes `enable_thinking=true` by default: with the original template the model started to think and returned an
+   empty answer for all 80 test messages. With the changed template every runtime builds exactly the prompt the
+   model was trained on.
 2. **Convert** with llama.cpp's `convert_hf_to_gguf.py` to GGUF with 8-bit weights (`q8_0`): ≈ 0.6 GB instead of 1.2 GB,
    with almost no quality loss for a model this small.
 3. **Load in LM Studio** and query it through its OpenAI-compatible server on `localhost:1234`.
@@ -411,8 +413,8 @@ md(r"""
 (*My Models → Import*, then *Developer → Start server*) or from a terminal:
 
 ```bash
-lms import a2_slm/outputs/qwen3-0.6b-altyn-router-q8_0.gguf
-lms load qwen3-0.6b-altyn-router-q8_0
+lms import -c -y --user-repo local/qwen3-0.6b-altyn-router a2_slm/outputs/qwen3-0.6b-altyn-router-q8_0.gguf
+lms load qwen3-0.6b-altyn-router -y --gpu max
 lms server start
 ```
 
@@ -508,8 +510,17 @@ print(note.replace("\\", ""))
 md(r"""
 ## 9 · Conclusions
 
-_Written after the run; see the README for the final text._
-""", )
+Fine-tuning Qwen3-0.6B with LoRA on 819 synthetic, blind re-labelled examples raised the share of fully correct
+routing decisions on the 80 hand-written test messages from 12.5 % to 77.5 % (78.8 % on a Colab T4 and as an 8-bit
+GGUF in LM Studio), with no invalid output, and both prompt injections stopped working. The experiment shows that
+the amount of data matters most: 100 examples already give about 40 %, and accuracy is still rising at 819, so more
+and more varied data (above all real, anonymised messages in Kazakh and in Latin letters) is the cheapest next
+step. The model is still 10–16 points behind the API LLMs of Assignment 1, mainly on urgency and escalation, and it
+missed 3 of the 15 escalations; but its token probabilities are informative, so with a confidence threshold it
+decides 39 % of the messages on its own at ≥ 95 % accuracy and passes the rest to a person. It runs in about a
+second on a laptop and keeps customer messages on the operator's own hardware, so it can serve as a cheap
+first-line router, with the uncertain cases going to an LLM or a human.
+""")
 
 
 def build():

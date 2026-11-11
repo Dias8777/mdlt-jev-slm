@@ -1,0 +1,12 @@
+|   id | message                                                                                                          | correct answer            | base model                 | fine-tuned                |
+|-----:|:-----------------------------------------------------------------------------------------------------------------|:--------------------------|:---------------------------|:--------------------------|
+|    5 | сәлеметсіз бе, интернет мүлдем жоқ, со вчерашнего вечера. Перезагружала телефон — не помогло                     | network · high · no esc   | network · high · ✗ESC      | network · high · no esc   |
+|    7 | В нашем ЖК на Сатпаева в квартирах вообще не ловит, только у окна. Если так и будет, перейду к другому оператору | network · medium · ESC    | network · medium · ✗no esc | network · medium · ESC    |
+|   17 | Пополнила баланс через Kaspi на 3000, прошло 2 часа — денег нет                                                  | billing · medium · no esc | ✗account · medium · ✗ESC   | billing · medium · no esc |
+|   25 | Все деньги с баланса пропали, 20 тысяч, кто-то через мой номер что-то купил                                      | billing · high · ESC      | ✗account · high · ESC      | billing · high · ✗no esc  |
+|   32 | я в аэропорту, вылет через час, роуминг не подключается через приложение, СРОЧНО помогите                        | tariff · high · no esc    | ✗network · high · ✗ESC     | tariff · high · no esc    |
+|   33 | Отключите мне, пожалуйста, услугу «Кто звонил»                                                                   | tariff · low · no esc     | ✗account · ✗medium · ✗ESC  | tariff · low · no esc     |
+|   49 | Мне пришло SMS, что моя SIM перевыпущена, но я ничего не делал! Связь пропала                                    | sim · high · ESC          | sim · ✗medium · ESC        | sim · high · ESC          |
+|   57 | Приложение вылетает сразу после запуска на iPhone 15                                                             | account · medium · no esc | ✗sim · ✗high · ✗ESC        | account · medium · no esc |
+|   71 | Рахмет, бәрі жақсы жұмыс істейді                                                                                 | other · low · no esc      | other · low · no esc       | other · low · no esc      |
+|   72 | ЗАРАБОТОК ОТ 50 000 ТГ В ДЕНЬ, пиши в телеграм @easy_money                                                       | other · low · no esc      | ✗account · ✗medium · ✗ESC  | ✗billing · low · no esc   |

@@ -379,12 +379,16 @@ def hyperparameter_table(info):
 # ------------------------------------------------------------------ export
 def no_thinking_template(template):
     """Qwen3's chat template adds the empty <think></think> block only when the caller passes
-    enable_thinking=False. LM Studio and llama.cpp do not pass it, so the exported model gets a template where
-    "no thinking" is the default. Then every runtime builds exactly the prompt the model was fine-tuned on."""
+    enable_thinking=False. llama.cpp does not pass it, and LM Studio passes enable_thinking=True by default, so with
+    the original template the exported model starts to "think" and spends its tokens there instead of answering.
+    The router was fine-tuned without thinking, so the exported template always adds the empty block, whatever
+    the runtime passes. Then every runtime builds exactly the prompt the model was fine-tuned on."""
     old = "{%- if enable_thinking is defined and enable_thinking is false %}"
-    new = "{%- if not (enable_thinking is defined and enable_thinking is true) %}"
+    new = "{%- if true %}"
     assert old in template, "unexpected chat template"
-    return template.replace(old, new)
+    template = template.replace(old, new)
+    assert "enable_thinking" not in template, "the template still depends on enable_thinking"
+    return template
 
 
 def merge_and_save(model_id, adapter, out_dir):

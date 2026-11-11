@@ -1,0 +1,1 @@
+{"text": "{\"messages\": [\"Срочно: по счёту двойное списание, деньги украдены.\"]}", "usage": {"prompt_tokens": 1077, "completion_tokens": 24, "total_tokens": 1101, "prompt_tokens_details": {"cached_tokens": 768}, "prompt_cache_hit_tokens": 768, "prompt_cache_miss_tokens": 309}}

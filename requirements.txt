@@ -1,0 +1,21 @@
+# Python 3.11+. Versions the notebooks were run with.
+
+# Assignment 1: Jev workflow, LLM baselines, analysis
+requests>=2.31
+matplotlib>=3.8
+numpy>=1.26
+
+# Assignment 2: data pipeline and LoRA fine-tuning
+scikit-learn>=1.4          # TF-IDF near-duplicate and test-leak filter in make_dataset.py
+torch>=2.5
+transformers==5.22.2
+trl==1.17.1
+peft==0.21.2
+datasets==5.2.0
+accelerate==1.15.0
+pandas>=2.2
+tabulate>=0.9              # DataFrame.to_markdown
+
+# notebooks
+jupyter
+nbformat

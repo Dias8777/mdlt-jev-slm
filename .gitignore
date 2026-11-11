@@ -1,0 +1,18 @@
+# secrets: API keys live only in .env (see .env.example)
+.env
+.env.*
+!.env.example
+
+# environments and caches
+.venv*/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# big files: LoRA adapters, merged model, GGUF, llama.cpp checkout (re-created by the A2 notebook)
+a2_slm/outputs/
+llama.cpp/
+
+# personal notes for the oral defense, kept out of the public repository
+DEFENSE_NOTES_RU.md

@@ -1,0 +1,71 @@
+{
+ "generated": 960,
+ "after_cleaning": 942,
+ "kept": 908,
+ "train": 819,
+ "valid": 89,
+ "test": 80,
+ "tricky": 10,
+ "dropped": {
+  "length": 1,
+  "exact_duplicate": 2,
+  "too_close_to_test": 15,
+  "no_majority": 34
+ },
+ "cost": {
+  "tiebreaker": {
+   "calls": 28,
+   "input_tokens": 44234,
+   "output_tokens": 142382,
+   "usd": 0.09093533999999999
+  },
+  "gen": {
+   "calls": 135,
+   "input_tokens": 176228,
+   "output_tokens": 52064,
+   "usd": 0.04595023199999999
+  },
+  "verify": {
+   "calls": 48,
+   "input_tokens": 75392,
+   "output_tokens": 31398,
+   "usd": 0.10147376799999998
+  }
+ },
+ "intent_vs_verifier_agreement": {
+  "category": 0.925,
+  "urgency": 0.571,
+  "escalate": 0.751
+ },
+ "label_source": {
+  "agreed": 398,
+  "majority": 510
+ },
+ "relabelled_vs_intent": 448,
+ "train_category": {
+  "sim": 135,
+  "account": 138,
+  "other": 136,
+  "network": 151,
+  "billing": 152,
+  "tariff": 107
+ },
+ "train_urgency": {
+  "low": 289,
+  "medium": 350,
+  "high": 180
+ },
+ "train_escalate_true": 160,
+ "train_lang": {
+  "kz": 71,
+  "kz_ru": 92,
+  "formal": 28,
+  "emoji": 37,
+  "ru": 282,
+  "ru_casual": 147,
+  "latin": 50,
+  "ru_typos": 76,
+  "en": 36
+ },
+ "max_sim_to_test_kept": 0.599
+}

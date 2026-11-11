@@ -1,0 +1,80 @@
+{"id": 0, "text": "Добрый день. С самого утра нет сети вообще, телефон пишет «Только SOS». Я в Астане, район Нурлы Жол.", "category": "network", "urgency": "high", "escalate": false}
+{"id": 1, "text": "интернет еле грузит, ютуб не открывается вечером, днем норм", "category": "network", "urgency": "medium", "escalate": false}
+{"id": 2, "text": "Подскажите, будет ли 5G в Усть-Каменогорске в этом году?", "category": "network", "urgency": "low", "escalate": false}
+{"id": 3, "text": "Второй день нет мобильного интернета, работаю курьером, без него никак. Обращаюсь уже третий раз, ничего не меняется!", "category": "network", "urgency": "high", "escalate": true}
+{"id": 4, "text": "При звонках голос собеседника пропадает, особенно в машине", "category": "network", "urgency": "medium", "escalate": false}
+{"id": 5, "text": "сәлеметсіз бе, интернет мүлдем жоқ, со вчерашнего вечера. Перезагружала телефон — не помогло", "category": "network", "urgency": "high", "escalate": false}
+{"id": 6, "text": "Как вручную прописать APN на Android? Сбросил настройки", "category": "network", "urgency": "low", "escalate": false}
+{"id": 7, "text": "В нашем ЖК на Сатпаева в квартирах вообще не ловит, только у окна. Если так и будет, перейду к другому оператору", "category": "network", "urgency": "medium", "escalate": true}
+{"id": 8, "text": "Скорость 4G упала до 0.5 Мбит/с после вашего «обновления сети»", "category": "network", "urgency": "medium", "escalate": false}
+{"id": 9, "text": "звонки сбрасываются через минуту разговора, раз 10 за день", "category": "network", "urgency": "medium", "escalate": false}
+{"id": 10, "text": "Не работает связь у всей семьи (3 номера), посёлок Талгар. Ни звонков, ни интернета.", "category": "network", "urgency": "high", "escalate": false}
+{"id": 11, "text": "Есть ли покрытие на трассе Алматы — Капчагай?", "category": "network", "urgency": "low", "escalate": false}
+{"id": 12, "text": "Роутер от вас не раздаёт интернет, лампочка горит красным, весь день без интернета, а у меня сегодня онлайн-экзамен", "category": "network", "urgency": "high", "escalate": false}
+{"id": 13, "text": "Нет сети в метро Алматы на станции Абай", "category": "network", "urgency": "medium", "escalate": false}
+{"id": 14, "text": "С баланса списали 12 400 тг за ночь, я ничего не подключал! Верните деньги", "category": "billing", "urgency": "medium", "escalate": false}
+{"id": 15, "text": "Пришёл счёт на 8 900, хотя обычно плачу 5 500. Почему?", "category": "billing", "urgency": "medium", "escalate": false}
+{"id": 16, "text": "Как заказать детализацию звонков за октябрь?", "category": "billing", "urgency": "low", "escalate": false}
+{"id": 17, "text": "Пополнила баланс через Kaspi на 3000, прошло 2 часа — денег нет", "category": "billing", "urgency": "medium", "escalate": false}
+{"id": 18, "text": "Опять списали 990 тг за какую-то подписку «Гороскоп», я её не подключала. Это уже мошенничество, напишу в Агентство по защите прав потребителей", "category": "billing", "urgency": "medium", "escalate": true}
+{"id": 19, "text": "Нужен акт сверки и счёт-фактура для ТОО «Арман Строй» за 3 квартал", "category": "billing", "urgency": "low", "escalate": false}
+{"id": 20, "text": "Двойное списание абонплаты, баланс ушёл в минус и номер заблокировали, не могу никому позвонить", "category": "billing", "urgency": "high", "escalate": false}
+{"id": 21, "text": "Где в приложении посмотреть, на что ушли деньги?", "category": "billing", "urgency": "low", "escalate": false}
+{"id": 22, "text": "Мне не вернули деньги за ошибочное списание, хотя обещали ещё 2 недели назад. Это моё четвёртое обращение", "category": "billing", "urgency": "medium", "escalate": true}
+{"id": 23, "text": "почему за роуминг сняли 25 тыс если я был в Турции 2 дня и интернет не включал", "category": "billing", "urgency": "medium", "escalate": false}
+{"id": 24, "text": "Можно ли оплачивать связь автоплатежом с карты Halyk?", "category": "billing", "urgency": "low", "escalate": false}
+{"id": 25, "text": "Все деньги с баланса пропали, 20 тысяч, кто-то через мой номер что-то купил", "category": "billing", "urgency": "high", "escalate": true}
+{"id": 26, "text": "Не начислились бонусы за пополнение по акции", "category": "billing", "urgency": "medium", "escalate": false}
+{"id": 27, "text": "Хочу перейти на тариф подешевле, мне хватает 5 ГБ", "category": "tariff", "urgency": "low", "escalate": false}
+{"id": 28, "text": "Как подключить роуминг в ОАЭ? Улетаю через неделю", "category": "tariff", "urgency": "low", "escalate": false}
+{"id": 29, "text": "Меня перевели на новый тариф без моего согласия, абонплата стала выше", "category": "tariff", "urgency": "medium", "escalate": false}
+{"id": 30, "text": "Купил пакет 20 ГБ, деньги сняли, а пакет не подключился", "category": "tariff", "urgency": "medium", "escalate": false}
+{"id": 31, "text": "Какие у вас есть семейные тарифы для 4 номеров?", "category": "tariff", "urgency": "low", "escalate": false}
+{"id": 32, "text": "я в аэропорту, вылет через час, роуминг не подключается через приложение, СРОЧНО помогите", "category": "tariff", "urgency": "high", "escalate": false}
+{"id": 33, "text": "Отключите мне, пожалуйста, услугу «Кто звонил»", "category": "tariff", "urgency": "low", "escalate": false}
+{"id": 34, "text": "В приложении при смене тарифа выдаёт ошибку 500, пытаюсь уже неделю, звонил вам дважды — без толку", "category": "tariff", "urgency": "medium", "escalate": true}
+{"id": 35, "text": "Подключите безлимит на соцсети", "category": "tariff", "urgency": "low", "escalate": false}
+{"id": 36, "text": "Оформите мне студенческий тариф, я студент КазНУ", "category": "tariff", "urgency": "low", "escalate": false}
+{"id": 37, "text": "Пакет минут закончился на середине месяца, хотя я почти не звонил. Если это повторится — уйду от вас", "category": "tariff", "urgency": "medium", "escalate": true}
+{"id": 38, "text": "Можно ли перенести остаток гигабайт на следующий месяц?", "category": "tariff", "urgency": "low", "escalate": false}
+{"id": 39, "text": "Тариф сменился сам, а старый уже в архиве. Верните мой старый тариф, иначе ухожу к Kcell", "category": "tariff", "urgency": "medium", "escalate": true}
+{"id": 40, "text": "Подключил «Безлимит ночью», а ночью всё равно списывает трафик", "category": "tariff", "urgency": "medium", "escalate": false}
+{"id": 41, "text": "Украли телефон в автобусе! Срочно заблокируйте мой номер", "category": "sim", "urgency": "high", "escalate": true}
+{"id": 42, "text": "Как перейти с обычной SIM на eSIM?", "category": "sim", "urgency": "low", "escalate": false}
+{"id": 43, "text": "eSIM не активируется, QR-код пишет «недействителен»", "category": "sim", "urgency": "medium", "escalate": false}
+{"id": 44, "text": "Перенос номера от Tele2 к вам идёт уже 10 дней, номер не работает ни там, ни тут", "category": "sim", "urgency": "high", "escalate": false}
+{"id": 45, "text": "Сим карта перестала определяться, пишет «нет SIM». Телефон новый", "category": "sim", "urgency": "medium", "escalate": false}
+{"id": 46, "text": "потеряла телефон, заблокируйте симку пожалуйста", "category": "sim", "urgency": "high", "escalate": true}
+{"id": 47, "text": "Хочу выбрать красивый номер, сколько стоит?", "category": "sim", "urgency": "low", "escalate": false}
+{"id": 48, "text": "Можно ли восстановить номер, которым не пользовался полгода?", "category": "sim", "urgency": "low", "escalate": false}
+{"id": 49, "text": "Мне пришло SMS, что моя SIM перевыпущена, но я ничего не делал! Связь пропала", "category": "sim", "urgency": "high", "escalate": true}
+{"id": 50, "text": "Нужна SIM-карта для ребёнка, можно оформить на моё имя?", "category": "sim", "urgency": "low", "escalate": false}
+{"id": 51, "text": "После замены SIM в офисе не работает мобильный интернет и не приходят SMS", "category": "sim", "urgency": "high", "escalate": false}
+{"id": 52, "text": "Хочу перенести номер к вам от Beeline, что для этого нужно?", "category": "sim", "urgency": "low", "escalate": false}
+{"id": 53, "text": "Симка сломалась пополам, где можно сделать замену?", "category": "sim", "urgency": "medium", "escalate": false}
+{"id": 54, "text": "Не приходит SMS-код для входа в приложение", "category": "account", "urgency": "medium", "escalate": false}
+{"id": 55, "text": "Кто-то зашёл в мой личный кабинет и сменил пароль, мне пришло уведомление", "category": "account", "urgency": "high", "escalate": true}
+{"id": 56, "text": "Как поменять email в профиле?", "category": "account", "urgency": "low", "escalate": false}
+{"id": 57, "text": "Приложение вылетает сразу после запуска на iPhone 15", "category": "account", "urgency": "medium", "escalate": false}
+{"id": 58, "text": "Забыла пароль от личного кабинета", "category": "account", "urgency": "low", "escalate": false}
+{"id": 59, "text": "Не могу войти в кабинет уже 5 дней, пишет «учётная запись заблокирована». Писал в чат 3 раза, ответа нет", "category": "account", "urgency": "medium", "escalate": true}
+{"id": 60, "text": "Как включить push-уведомления о списаниях?", "category": "account", "urgency": "low", "escalate": false}
+{"id": 61, "text": "в приложении показывает чужое имя и чужой номер!!! это что, утечка данных?", "category": "account", "urgency": "high", "escalate": true}
+{"id": 62, "text": "Не могу привязать второй номер к аккаунту", "category": "account", "urgency": "medium", "escalate": false}
+{"id": 63, "text": "Удалите мой аккаунт и все персональные данные", "category": "account", "urgency": "low", "escalate": false}
+{"id": 64, "text": "Приложение на казахском показывает квадратики вместо букв", "category": "account", "urgency": "medium", "escalate": false}
+{"id": 65, "text": "Ошибка при входе через eGov, просто бесконечно крутится загрузка", "category": "account", "urgency": "medium", "escalate": false}
+{"id": 66, "text": "Как сменить владельца аккаунта на мужа?", "category": "account", "urgency": "low", "escalate": false}
+{"id": 67, "text": "Спасибо оператору Айгерим, очень быстро решила вопрос!", "category": "other", "urgency": "low", "escalate": false}
+{"id": 68, "text": "Где ближайший офис в Караганде и до скольки работает?", "category": "other", "urgency": "low", "escalate": false}
+{"id": 69, "text": "Продаёте ли вы телефоны в рассрочку?", "category": "other", "urgency": "low", "escalate": false}
+{"id": 70, "text": "Сотрудник в офисе на Абая нахамил мне и отказался помогать. Требую разобраться, иначе напишу в соцсети и в Министерство", "category": "other", "urgency": "medium", "escalate": true}
+{"id": 71, "text": "Рахмет, бәрі жақсы жұмыс істейді", "category": "other", "urgency": "low", "escalate": false}
+{"id": 72, "text": "ЗАРАБОТОК ОТ 50 000 ТГ В ДЕНЬ, пиши в телеграм @easy_money", "category": "other", "urgency": "low", "escalate": false}
+{"id": 73, "text": "Вы берёте на стажировку студентов IT?", "category": "other", "urgency": "low", "escalate": false}
+{"id": 74, "text": "Хочу предложить сотрудничество по рекламе на ваших билбордах", "category": "other", "urgency": "low", "escalate": false}
+{"id": 75, "text": "Курьер обещал привезти роутер вчера и не приехал, никто не звонит", "category": "other", "urgency": "medium", "escalate": false}
+{"id": 76, "text": "Какая погода завтра в Алматы?", "category": "other", "urgency": "low", "escalate": false}
+{"id": 77, "text": "Нужна справка для посольства о том, что я ваш абонент", "category": "other", "urgency": "low", "escalate": false}
+{"id": 78, "text": "Офис закрыт в рабочее время, приехал из другого района зря", "category": "other", "urgency": "medium", "escalate": false}
+{"id": 79, "text": "Вы спонсируете турнир по футболу?", "category": "other", "urgency": "low", "escalate": false}

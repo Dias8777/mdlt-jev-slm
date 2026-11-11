@@ -1,0 +1,7 @@
+| System | Exact match (all 3) | Category acc | Category macro-F1 | Urgency acc | Escalate acc | Escalate recall | % invalid | Avg latency, s | p95 latency, s | Cost / 1,000 decisions | Input tokens / decision | Auto-decided at ≥ 95 % accuracy |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| DeepSeek V4 Flash (JSON, T = 0) | 93.8% | 98.8% | 0.988 | 96.2% | 98.8% | 100.0% | 0.0% | 1.22 | 1.55 | $0.0362 | 540 | 0%\* |
+| DeepSeek V4 Flash (JSON, T = 1) | 88.8% | 98.8% | 0.988 | 90.0% | 100.0% | 100.0% | 0.0% | 1.20 | 1.53 | $0.0362 | 540 | 91% |
+| DeepSeek V4 Pro (JSON, T = 0) | 87.5% | 97.5% | 0.975 | 93.8% | 96.2% | 100.0% | 0.0% | 1.45 | 1.77 | $0.0754 | 537 | 0%\* |
+
+Test set: 80 hand-labelled messages. Latency = one request at a time from Almaty (network included). % invalid = output that is not valid JSON with allowed labels. Cost: Jev at $0.042 per 1M input tokens (output free); DeepSeek at its off-peak list price (2x in its peak hours), with the repeated system prompt billed at the cache-hit price. Auto-decided = the largest share of messages above a confidence threshold whose exact-match accuracy is still >= 95 % (Jev: weakest typed answer; LLM: least certain generated token). T = sampling temperature. \* No usable confidence: at T = 0 DeepSeek reports probability 1.0 for every generated token, so a threshold cannot separate its answers and it decides all messages or none (all only if its accuracy is >= 95 %).

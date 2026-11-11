@@ -1,0 +1,1 @@
+{"text": "{\"messages\": [\"Пополнение через Kaspi не дошло, третий раз пишу\"]}", "usage": {"prompt_tokens": 1056, "completion_tokens": 22, "total_tokens": 1078, "prompt_tokens_details": {"cached_tokens": 768}, "prompt_cache_hit_tokens": 768, "prompt_cache_miss_tokens": 288}}

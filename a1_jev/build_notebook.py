@@ -353,7 +353,7 @@ md(r"""
   94 % of the messages on its own at 96 % accuracy and sends 6 % to a person. DeepSeek at temperature 0 reports
   probability 1.0 for everything, so it can only decide all messages or none; at temperature 1 its probabilities
   become useful (91 % automatic), but its answers are then sampled and its exact match drops to 88.8 %.
-* **Tricky inputs: Jev is weaker, but it knows it.** All three LLM runs got 9 of 10 right, Jev 6 of 10: it failed
+* **Tricky inputs: Jev is weaker, but it knows it.** All three LLM runs got 9 of 10 right, Jev 7 of 10: it failed
   on Kazakh in Latin letters, on "😡😡😡 баланс" and on the Kazakh–Russian mix, where an LLM's knowledge of languages
   helps. All three wrong answers had confidence 0.20–0.44, below the threshold, so in the workflow they go to a
   person and no wrong decision is made automatically. Both prompt injections had no effect on Jev, since the message

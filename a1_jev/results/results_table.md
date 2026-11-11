@@ -1,5 +1,6 @@
 | System | Exact match (all 3) | Category acc | Category macro-F1 | Urgency acc | Escalate acc | Escalate recall | % invalid | Avg latency, s | p95 latency, s | Cost / 1,000 decisions | Input tokens / decision | Auto-decided at ≥ 95 % accuracy |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Jev 1.14 (4 typed questions) | 93.8% | 98.8% | 0.988 | 95.0% | 100.0% | 100.0% | 0.0% | 0.44 | 0.53 | $0.0389 | 926 | 94% |
 | DeepSeek V4 Flash (JSON, T = 0) | 93.8% | 98.8% | 0.988 | 96.2% | 98.8% | 100.0% | 0.0% | 1.22 | 1.55 | $0.0362 | 540 | 0%\* |
 | DeepSeek V4 Flash (JSON, T = 1) | 88.8% | 98.8% | 0.988 | 90.0% | 100.0% | 100.0% | 0.0% | 1.20 | 1.53 | $0.0362 | 540 | 91% |
 | DeepSeek V4 Pro (JSON, T = 0) | 87.5% | 97.5% | 0.975 | 93.8% | 96.2% | 100.0% | 0.0% | 1.45 | 1.77 | $0.0754 | 537 | 0%\* |

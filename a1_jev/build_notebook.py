@@ -204,7 +204,7 @@ latency of one decision, network from Almaty included) and appends every answer 
 
 | system | how it is asked | output |
 |---|---|---|
-| **Jev 1.14** (TypeSafe's System One API) | the 4 typed questions of §2 | probabilities → `decide()` |
+| **Jev 1.14** (TypeSafe's System One API, called through OpenRouter) | the 4 typed questions of §2 | probabilities → `decide()` |
 | **DeepSeek V4 Flash** (DeepSeek API) | system prompt = the labelling guide; JSON mode; temperature 0; thinking off | a JSON object + token probabilities |
 | **DeepSeek V4 Pro** (DeepSeek API) | the same | a JSON object + token probabilities |
 | **DeepSeek V4 Flash, T = 1** | the same, but temperature 1 | a JSON object + informative token probabilities |
@@ -341,7 +341,28 @@ display(Markdown((RES / "tricky_cases.md").read_text(encoding="utf-8")))
 md(r"""
 ## 9 · Conclusions: Jev vs LLM
 
-_Written after the run; see the README for the final text._
+* **Accuracy: a tie with the best LLM.** On the 80 hand-labelled messages Jev gets all three fields right on 93.8 %,
+  the same as DeepSeek V4 Flash and more than DeepSeek V4 Pro (87.5 %). It never misses a message that must be
+  escalated (escalate accuracy and recall 100 %), and it can never return an invalid answer, because every answer
+  has the declared type. Four of its five errors are about urgency, the field where the guide leaves the most room
+  for judgement.
+* **Speed and cost.** One Jev decision takes 0.44 s on average (p95 0.53 s), about three times faster than the LLMs
+  (1.2–1.5 s), because nothing is generated. It costs $0.039 per 1,000 decisions, the same as Flash ($0.036) and half
+  of Pro ($0.075). The whole Jev run over 90 messages cost $0.0035.
+* **Confidence is the real difference.** Jev's probabilities are informative: with the threshold t = 0.58 it decides
+  94 % of the messages on its own at 96 % accuracy and sends 6 % to a person. DeepSeek at temperature 0 reports
+  probability 1.0 for everything, so it can only decide all messages or none; at temperature 1 its probabilities
+  become useful (91 % automatic), but its answers are then sampled and its exact match drops to 88.8 %.
+* **Tricky inputs: Jev is weaker, but it knows it.** All three LLM runs got 9 of 10 right, Jev 6 of 10: it failed
+  on Kazakh in Latin letters, on "😡😡😡 баланс" and on the Kazakh–Russian mix, where an LLM's knowledge of languages
+  helps. All three wrong answers had confidence 0.20–0.44, below the threshold, so in the workflow they go to a
+  person and no wrong decision is made automatically. Both prompt injections had no effect on Jev, since the message
+  is only the `state` it reads, never an instruction.
+* **What to use.** For this routing task Jev is the better first-line tool: as accurate as the LLM, three times
+  faster, with a confidence that tells when a person must look, and with the decision policy in plain code. The
+  uncertain messages (about 6 %) can go to a person or to an LLM. One caveat: the threshold was chosen on the same 80
+  messages it is reported on, and the tricky set has only 10 messages, so these numbers should be confirmed on new,
+  real messages.
 """)
 
 

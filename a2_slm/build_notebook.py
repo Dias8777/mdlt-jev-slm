@@ -517,7 +517,7 @@ routing decisions on the 80 hand-written test messages from 12.5 % to 77.5 % (78
 GGUF in LM Studio), with no invalid output, and both prompt injections stopped working. The experiment shows that
 the amount of data matters most: 100 examples already give about 40 %, and accuracy is still rising at 819, so more
 and more varied data (above all real, anonymised messages in Kazakh and in Latin letters) is the cheapest next
-step. The model is still 10–16 points behind the API LLMs of Assignment 1, mainly on urgency and escalation, and it
+step. The model is still 10–16 points behind Jev and the API LLMs of Assignment 1, mainly on urgency and escalation, and it
 missed 3 of the 15 escalations; but its token probabilities are informative, so with a confidence threshold it
 decides 39 % of the messages on its own at ≥ 95 % accuracy and passes the rest to a person. It runs in about a
 second on a laptop and keeps customer messages on the operator's own hardware, so it can serve as a cheap

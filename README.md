@@ -250,9 +250,10 @@ notebook ([table](a2_slm/results/experiment_dataset_size_colab_t4.md)):
   data is the cheapest way to a better model: the whole dataset of 908 examples cost $0.24 to generate and
   re-label.
 * The validation loss falls with every step (0.088 → 0.075 → 0.058 → 0.049), in line with the accuracy.
-* One test message is 1.25 points, and small runs are noisy: the same 100 examples trained on the Apple M4 (bf16,
-  batch 1 × 16) gave 38.8 % instead of 43.8 %. Differences of a few points between neighbouring sizes are within
-  this noise; the trend is not.
+* One test message is 1.25 points, and small runs are noisy. The same subsets trained on the Apple M4 (bf16,
+  batch 1 × 16) gave 38.8 % with 100 examples and 50.0 % with 200 (T4: 43.8 % and 47.5 %), and 77.5 % with all 819
+  (T4: 78.8 %); the 400-example run was not repeated there. Differences of a few points between neighbouring sizes
+  are within this noise; the trend is not.
 
 ### Export: GGUF in LM Studio
 

@@ -9,6 +9,10 @@ number below is directly comparable.
 | **Assignment 1** · Jev vs LLM | [`a1_jev/a1_jev_routing.ipynb`](a1_jev/a1_jev_routing.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Dias8777/mdlt-jev-slm/blob/main/a1_jev/a1_jev_routing.ipynb) |
 | **Assignment 2** · Qwen3-0.6B + LoRA | [`a2_slm/a2_finetune_qwen3.ipynb`](a2_slm/a2_finetune_qwen3.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Dias8777/mdlt-jev-slm/blob/main/a2_slm/a2_finetune_qwen3.ipynb) |
 
+**Assignment 2 with every output:** [the run of the notebook on a free Colab T4 GPU](https://colab.research.google.com/drive/1VAme7w2JCB2_37CWpsLmjuJAH_PSEZQi)
+(Run all, 11.11.2026), saved on Google Drive and open to anyone with the link. The notebook files in this repository
+are saved without outputs; the Colab badges above open them for a fresh run.
+
 Every table and figure below is also saved as a file in `a1_jev/results/` and `a2_slm/results/`.
 **There are no API keys in this repository**: keys are read at run time
 from environment variables, Colab secrets or a git-ignored `.env` file (see [`.env.example`](.env.example)).
@@ -330,8 +334,10 @@ from Almaty.
 
 ### The same notebook on a free Colab T4
 
-The notebook in this repository was also run from top to bottom on a free Colab T4 (Run all, no changes): it
-took about 30 minutes, including the GGUF export. The T4 has no bf16, so it trains with fp32 weights and fp16
+The notebook in this repository was also run from top to bottom on a free Colab T4 (Run all, no changes to the
+code): it took about 30 minutes, including the GGUF export. [This run with all its outputs](https://colab.research.google.com/drive/1VAme7w2JCB2_37CWpsLmjuJAH_PSEZQi)
+is saved on Google Drive; after the run only its text cells were updated (the introduction, the export and LM Studio
+text, and the conclusions with the T4 numbers). The T4 has no bf16, so it trains with fp32 weights and fp16
 autocast and a different micro-batch (4 × 4 instead of 1 × 16). The numbers are close to the laptop run, which
 shows the result is not an accident of one run:
 

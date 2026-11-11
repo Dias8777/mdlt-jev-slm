@@ -56,8 +56,10 @@ Example: «Украли телефон в автобусе! Срочно заб�
 
 **How to run.** Colab: *Runtime → Change runtime type → T4 GPU*, then *Runtime → Run all*. The first cell clones the
 repository and installs the pinned libraries; no API keys are needed. Locally: run it from the repository with the
-packages in `requirements.txt`. The saved outputs below come from a run on a MacBook with an Apple M4 chip
-(16 GB unified memory, PyTorch `mps` backend).
+packages in `requirements.txt`. The notebook file in the repository is saved without outputs;
+[the run on a free Colab T4 GPU with every output](https://colab.research.google.com/drive/1VAme7w2JCB2_37CWpsLmjuJAH_PSEZQi)
+is saved on Google Drive. The README also reports a run on a MacBook with an Apple M4 chip (16 GB unified memory,
+PyTorch `mps` backend).
 """)
 
 md(r"""
